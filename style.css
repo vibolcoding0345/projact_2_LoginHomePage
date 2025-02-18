@@ -1,0 +1,122 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.banner {
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0.75)) 
+     , url(./assets/car\ background.jpg);
+     background-size: cover;
+     background-position: center;
+}
+
+.banner .navbar {
+     width: 100%;
+     padding: 20px;
+     background: rgba(255 ,255, 255, 0.1);
+     display: flex;
+     border-radius: 10px;
+     transition: .5s;
+}
+
+.banner .navbar:hover {
+     background: rgba(73, 198, 112, 0.2);
+     color: #fff;
+     box-shadow: 0 0 200px rgba(13, 197, 53, 0.2);
+}
+.navbar {
+     width: 85%;
+     margin: auto;
+     padding: 35px 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.logo {
+     width: 120px;
+     cursor: pointer;
+}
+
+.navbar ul li {
+     list-style: none;
+     display: inline-block;
+     margin: 0 20px;
+     position: relative;
+}
+.navbar ul li a {
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+}
+
+.navbar ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background: #009688;
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     transition: .5s;
+}
+
+.navbar ul li:hover::after {
+     width: 100%;
+}
+
+.content {
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     color: #fff;
+     gap: 2px;
+} 
+
+.content .title {
+     font-size: 70px;
+     color: aqua;
+     margin-top: 80px;
+}
+
+.title:hover {
+     color: #d8b12f;
+     
+}
+
+.content p{
+     margin: 20px auto;
+     font-weight: 500;
+     font-size: 20px;
+     color: #fff;
+}
+.content p:hover{
+     color: bisque;
+}
+
+button {
+     width: 200px;
+     padding: 15px 0;
+     text-align: center;
+     margin: 20px 10px;
+     border-radius: 25px;
+     box-shadow: 0 0 20px rgba(159, 40, 40, 0.9);
+     font-weight: bold;
+     border: 2px solid #d8b12f;
+     background: transparent;
+     color: white;
+     cursor: pointer;
+     transition: 0.5s;
+}
+
+button:hover{
+     color: black;
+     background: #fff;
+     border: 30px;
+     border-color: rgb(171, 226, 60);
+     box-shadow:20px rgba(159, 40, 40, 0.9);
+}
